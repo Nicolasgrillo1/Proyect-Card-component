@@ -1,0 +1,83 @@
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+@import url(https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap);
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  max-width: 768px;
+  min-width: 375px;
+}
+.container .container__cards.active {
+  width: 50%;
+}
+.container .container__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25%;
+  color: white;
+  padding: 2rem;
+  transition: width 0.3s ease-in-out;
+  cursor: pointer;
+}
+.container .container__cards .cards__title h1 {
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+}
+.container .container__cards .cards__info {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 1rem;
+  margin-bottom: 4rem;
+  flex-grow: 1;
+}
+.container .container__cards .cards__botton a {
+  border-radius: 1rem;
+  border: none;
+  font-size: 12px;
+  background-color: white;
+  padding: 0.5rem 1rem;
+}
+.container .container__cards:first-child {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.container .container__cards:last-child {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.container .sedans {
+  background-color: #e38826;
+}
+.container .sedans a {
+  color: #e38826;
+}
+.container .suvs {
+  background-color: #006970;
+}
+.container .suvs a {
+  color: #006970;
+}
+.container .luxury {
+  background-color: #004241;
+}
+.container .luxury a {
+  color: #004241;
+}
+
+/*# sourceMappingURL=styles.css.map */

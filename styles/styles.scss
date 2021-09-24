@@ -1,0 +1,111 @@
+//Generales
+*{
+ box-sizing: border-box;
+ text-decoration: none;
+ list-style: none;
+}
+    
+html,body{
+    height: 100%;
+    padding: 0;
+    margin: 0;    
+}
+
+//colores
+
+$color-orange:hsl(31, 77%, 52%);
+$color-cyan:hsl(184, 100%, 22%);
+$color-darkC:hsl(179, 100%, 13%);
+
+//font
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+ @import url(https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap);
+ 
+ $font400: 'Big Shoulders Display', cursive;
+ $font700: 'Lexend Deca', sans-serif;
+ 
+ //         layout
+ 
+ body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: lightgray;
+     font-size: 15px;
+    }
+    
+    //container
+    .container{
+        display: flex;
+        max-width: 768px;
+        min-width: 375px;
+        //cards
+        .container__cards.active{
+        width: 50%;
+        }
+        .container__cards{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 25%;
+        color: white;
+        padding: 2rem;
+        transition: width .3s ease-in-out;
+        cursor: pointer;
+        .cards__title{
+            h1{
+                font-family:$font700;
+                text-transform: uppercase;
+            }
+        }
+        .cards__info{
+            font-family: $font400;
+            font-size: 1rem;
+            margin-bottom: 4rem;
+            flex-grow: 1;
+        }
+        .cards__botton{
+            a{
+                border-radius: 1rem;
+                border: none;
+                font-size: 12px;
+                background-color: white;
+                padding: .5rem 1rem;
+            }
+            
+        }
+    }
+    .container__cards:first-child{
+        border-radius: .5rem 0 0 .5rem;
+    }
+    .container__cards:last-child{
+        border-radius: 0 .5rem .5rem 0;
+    }
+    
+    .sedans{
+        background-color: $color-orange;
+        a{
+            color:$color-orange;
+        }
+        
+    }
+    .suvs{
+        background-color: $color-cyan;
+        a{
+            color:$color-cyan;
+        }
+    }
+    .luxury{
+        background-color: $color-darkC;
+        a{
+            color:$color-darkC;
+        }
+    }    
+
+
+
+ }
+
+
+ 
+

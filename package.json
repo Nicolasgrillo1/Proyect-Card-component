@@ -1,0 +1,15 @@
+{
+  "name": "frontendmentor",
+  "version": "1.0.0",
+  "description": "![Design preview for the 3-column preview card component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass-compile": "sass  styles/styles.scss styles/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.39.0"
+  }
+}
